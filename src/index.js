@@ -1,6 +1,5 @@
 import Schema from './Schema'
 import './proptypes/schema'
-import './proptypes/email'
 
 const { format, validate, PropTypes } = Schema
 
