@@ -120,6 +120,7 @@ let ReactPropTypes = {
   number: createPrimitiveTypeChecker('number'),
   object: createPrimitiveTypeChecker('object'),
   string: createPrimitiveTypeChecker('string'),
+  symbol: createPrimitiveTypeChecker('symbol'),
 
   any: createAnyTypeChecker(),
   arrayOf: createArrayOfTypeChecker,
