@@ -32,11 +32,9 @@ A schema is defined as a plain object with PropTypes as values.
 
 #### Available types
 
-All `PropTypes` validators from React are supported, except `symbol`.
+All `PropTypes` validators from React are supported.
 
-```
-any, array, arrayOf, bool, boolOrString, element, func, instanceOf, node, number, numberOrString, object, objectOf, oneOf, oneOfType, schema, shape, string
-```
+- any, array, arrayOf, bool, boolOrString, element, func, instanceOf, node, number, numberOrString, object, objectOf, oneOf, oneOfType, shape, string, symbol
 
 Please refer to their documentation ([Typechecking With PropTypes](https://facebook.github.io/react/docs/typechecking-with-proptypes.html)) for details of use.
 

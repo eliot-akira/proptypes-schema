@@ -1,13 +1,13 @@
 {
   "name": "proptypes-schema",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Generic object schema modeled on React PropTypes",
   "main": "./lib/index.js",
   "scripts": {
     "prebuild": "mkdir -p lib",
     "build": "babel src --out-dir lib",
     "dev": "babel src --watch --out-dir lib",
-    "test": "mocha 'src/**/*.test.js' --require babel-register",
+    "test": "NODE_PATH=src mocha 'test/**/*.test.js' --require babel-register",
     "tdd": "npm test -- --reporter min --watch",
     "clean": "rm -rf lib",
     "prepublish": "npm run build"
