@@ -201,7 +201,3 @@ const personSchema = new Schema('Person', {
   address: PropTypes.schema(addressSchema).isRequired
 })
 ```
-
-## Disclaimer
-
-**`proptypes-schema` is a work in progress, and needs testing.**
