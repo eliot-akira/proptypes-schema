@@ -4,7 +4,7 @@ Generic object schema validation modeled on React PropTypes
 
 #### Purpose
 
-React's [PropTypes]((https://github.com/reactjs/prop-types)) offers a flexible way to define and validate component APIs.
+React's [PropTypes](https://github.com/reactjs/prop-types) offers a flexible way to define and validate component APIs.
 
 This library extends it for generic object validation, which allows for a wider range of use, with or without React, as well as server-side. It includes [an updated fork of PropTypes](https://github.com/eliot-akira/prop-types-callable), intended for use in both development and production environments.
 
