@@ -129,7 +129,20 @@ The validator is exposed as `PropTypes[name]`, and decorated with an optional `i
 
 For a valid value, the validator must return nothing (`null` or `undefined`).
 
-Anything else is considered an error, such as string, object, or an `Error` instance. This is passed to the errors object returning from `validate()`. It can be used to pass error codes.
+Anything else is considered an error, such as string, object, or an `Error` instance. This is passed to the errors object returning from `validate()`. It can be used, for example, to pass error codes.
+
+Optionally, `PropTypeError` can be used in place of the native `Error` class, as a light-weight alternative that doesn't include a stack trace.
+
+
+```js
+import { PropTypeError } from 'proptypes-schema'
+
+addPropType('notEmpty', (value, propName, schemaName) => {
+  if (!value) {
+    return new PropTypeError(`'${propName}' is empty for '${schemaName}'.`)
+  }
+})
+```
 
 #### Validator with argument
 
