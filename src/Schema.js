@@ -1,8 +1,9 @@
-import { PropTypes, validate, format } from './react-schema'
+import { PropTypes, PropTypeError, validate, format } from './react-schema'
 
 export default class Schema {
 
   static PropTypes = PropTypes
+  static PropTypeError = PropTypeError
   static defaultName = 'Schema'
 
   static isSchema(schema) {

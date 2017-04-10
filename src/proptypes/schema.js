@@ -4,7 +4,6 @@ import {
   defineFormatter, shapeToObject
 } from '../react-schema'
 
-
 PropTypes.schema = createIntrospectableChecker('schema', schema =>
   PropTypes.shape( Schema.toShape(schema) )
 )

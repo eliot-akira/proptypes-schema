@@ -6,7 +6,7 @@ const PropTypes = Schema.PropTypes
 
 describe('Schema.PropTypes', () => {
   it('should provide all React.PropTypes validators', () => {
-    expect(PropTypes).to.have.all.keys(...reactPropTypes)
+    expect(PropTypes).to.contain.all.keys(...reactPropTypes)
   })
 })
 

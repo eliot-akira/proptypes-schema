@@ -1,5 +1,5 @@
+import { createChainableTypeChecker } from 'prop-types-callable'
 import { PropTypes, createIntrospectableChecker, defineFormatter } from './react-schema'
-import { createChainableTypeChecker } from './react-proptypes'
 
 export default function addPropType(name, checker, withArg = false) {
 
