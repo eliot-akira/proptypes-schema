@@ -135,7 +135,7 @@ Optionally, `PropTypeError` can be used in place of the native `Error` class, as
 
 
 ```js
-import { PropTypeError } from 'proptypes-schema'
+import { addPropType, PropTypeError } from 'proptypes-schema'
 
 addPropType('notEmpty', (value, propName, schemaName) => {
   if (!value) {
