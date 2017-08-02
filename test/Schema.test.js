@@ -1,4 +1,4 @@
-import Schema from 'Schema'
+import Schema from 'index'
 import { expect } from 'chai'
 import { reactPropTypes, testSchema, validData, invalidData } from './data'
 

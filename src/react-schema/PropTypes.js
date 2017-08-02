@@ -1,4 +1,4 @@
-import ReactPropTypes from 'prop-types-callable'
+import ReactPropTypes from '../prop-types-callable'
 import clone from './utils/clone'
 import createIntrospectableChecker from './utils/createIntrospectableChecker'
 

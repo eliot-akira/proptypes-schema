@@ -20,8 +20,8 @@
  */
 
 export default function createIntrospectableChecker(type, sourceChecker) {
-  return function applyCheckerAndAddTypeInfo(args) {
-    const checker = sourceChecker(args)
+  return function applyCheckerAndAddTypeInfo(args, ...more) {
+    const checker = sourceChecker(args, ...more)
     const $meta = { type, args }
 
     if (!(checker instanceof Function)) {

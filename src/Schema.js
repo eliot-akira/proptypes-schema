@@ -18,8 +18,7 @@ export default class Schema {
     return Schema.isSchema(schema) ? schema.name : Schema.defaultName
   }
 
-  static validate = (schema, data) => {
-
+  static validate = (schema, data = {}) => {
     const name = Schema.getName(schema)
     const result = validate(Schema.toShape(schema), data, name)
 
@@ -47,11 +46,13 @@ export default class Schema {
     this.shape = (shape instanceof Function) ? shape(PropTypes) : shape
   }
 
-  validate(data, name) {
-    return Schema.validate(this.shape, data, name || this.name)
+  validate(data) {
+    return Schema.validate(this, data)
   }
 
   format() {
-    return Schema.format(this.shape)
+    return Schema.format(this)
   }
 }
+
+export { PropTypes, PropTypeError }

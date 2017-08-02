@@ -23,7 +23,7 @@
  *         }
  */
 
-const validate = (propTypes, props, displayName) => {
+const validate = (propTypes = {}, props, displayName) => {
 
   const result = { isValid: true }
 
@@ -36,7 +36,7 @@ const validate = (propTypes, props, displayName) => {
     const validator = propTypes[key]
     const error = validator(props, key, displayName, 'prop', key)
 
-    if (error !== null) {
+    if (error != null) {
       result.isValid = false
       result.errors = result.errors || {}
       result.errors[key] = error
